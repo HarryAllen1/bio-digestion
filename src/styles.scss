@@ -1,0 +1,46 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$bio-digestion-primary: mat.define-palette(mat.$blue-palette);
+$bio-digestion-accent: mat.define-palette(mat.$blue-palette, A200, A100, A400);
+$bio-digestion-warn: mat.define-palette(mat.$red-palette);
+
+$bio-digestion-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $bio-digestion-primary,
+      accent: $bio-digestion-accent,
+      warn: $bio-digestion-warn,
+    ),
+  )
+);
+
+@include mat.all-component-themes($bio-digestion-theme);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+button.mat-button-base,
+a.mat-button-base {
+  border-radius: 18px;
+}
+mat-dialog-container.mat-dialog-container {
+  border-radius: 28px;
+  margin: 24px;
+  .mat-dialog-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.mat-dialog-actions {
+  justify-content: flex-end;
+}
+.mat-dialog-container {
+  max-width: 500px;
+}

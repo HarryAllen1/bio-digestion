@@ -1,0 +1,14 @@
+main {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 25px;
+}
+.explanations {
+  max-width: 500px;
+}
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}

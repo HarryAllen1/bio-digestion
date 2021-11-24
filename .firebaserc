@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "harry-school-projects": {
+      "hosting": {
+        "bio-digestion": [
+          "harry-digestive-system-bio-jhs"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "harry-school-projects"
+  }
+}

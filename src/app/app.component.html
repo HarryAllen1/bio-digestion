@@ -1,0 +1,42 @@
+<div>
+  <button
+    class="digestion-comparison-button"
+    mat-flat-button
+    color="primary"
+    (click)="openDigestionComparisonDialog()"
+  >
+    Mechanical vs. Chemical Digestion
+  </button>
+</div>
+<main>
+  <div class="explanations">
+    <app-explanation title="Salivary Gland">
+      The salivary gland produces saliva, which contains amylase, which breaks
+      down carbohydrates into simple sugars.
+    </app-explanation>
+  </div>
+  <app-digestive-image></app-digestive-image>
+  <div class="explanations">
+    <app-explanation title="Mouth">
+      The mouth contains teeth, and uses mechanical digestion to break down food
+      into smaller chunks. The tongue (also in the mouth) then pushes the food
+      down into the esophagus.
+    </app-explanation>
+    <app-explanation title="Esophagus">
+      The esophagus is the tube that carries food from the mouth to the stomach.
+      The esophagus is lined with mucus, which is used as a lubricant. The
+      esophagus uses a process called peristalsis to move the food.
+    </app-explanation>
+    <br />
+    <br />
+    <br />
+
+    <app-explanation title="Stomach">
+      The stomach is a pouch that contains stomach acid. This acid preforms
+      chemical digestion, which further breaks down the food so it can be
+      absorbed. The stomach is protected by a layer of mucus, so the acid
+      doesn't burn through the sides.
+    </app-explanation>
+    <app-explanation title="Duodenum"></app-explanation>
+  </div>
+</main>
