@@ -44,7 +44,7 @@ mat-dialog-container.mat-dialog-container {
 .mat-dialog-container {
   max-width: 500px;
 }
-.mat-divider {
+mat-divider.mat-divider {
   $margin: 24px;
   margin-top: $margin;
   margin-bottom: $margin;
