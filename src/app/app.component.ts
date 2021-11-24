@@ -15,7 +15,5 @@ export class AppComponent {
       autoFocus: false,
     });
   }
-  requestFullscreen(): void {
-    document.body.requestFullscreen()
-  }
+
 }
