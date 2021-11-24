@@ -13,5 +13,5 @@ platformBrowserDynamic()
   .catch((err) => console.error(err));
 
 setInterval(() => {
-  window.location.reload();
+  if (navigator.onLine) window.location.reload();
 }, 1800000);
