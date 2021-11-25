@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { getDownloadURL, ref, Storage } from '@angular/fire/storage';
-import { from, Observable } from 'rxjs';
+import { SelectorService } from '../selector.service';
 
 @Component({
   selector: 'app-digestive-image',
@@ -8,12 +7,8 @@ import { from, Observable } from 'rxjs';
   styleUrls: ['./digestive-image.component.scss'],
 })
 export class DigestiveImageComponent {
-  constructor(private storage: Storage) {
-    const imageRef = ref(storage, 'digestive system.png');
-    this.downloadUrl$ = from(getDownloadURL(imageRef));
-  }
-
-  downloadUrl$: Observable<string>;
+  constructor(public selector: SelectorService) {}
+  log = console.log;
 }
 
 @Component({

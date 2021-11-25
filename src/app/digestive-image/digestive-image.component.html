@@ -1,56 +1,144 @@
-<section style="position: relative;">
+<section style="position: relative">
   <img
     [src]="
-    'https://firebasestorage.googleapis.com/v0/b/harry-school-projects.appspot.com/o/digestive%20system.png?alt=media&token=ecf97ba0-9351-4bf9-b854-94274820675c'
-  "
+      'https://firebasestorage.googleapis.com/v0/b/harry-school-projects.appspot.com/o/digestive%20system.png?alt=media&token=ecf97ba0-9351-4bf9-b854-94274820675c'
+    "
     alt="The Digestive System"
     id="digestive-image"
     width="300"
   />
   <div
+    (click)="selector.selected = 'Mouth'"
+    (mouseover)="selector.selected = 'Mouth'"
     class="mouth-tooltip"
-    style="position: absolute; top: 0; left: 0; width: 80px; height: 120px;"
+    style="position: absolute; top: 0; left: 0; width: 80px; height: 120px"
     matTooltip="Mouth"
   ></div>
   <div
+    (click)="selector.selected = 'Salivary Gland'"
+    (mouseover)="selector.selected = 'Salivary Gland'"
     class="salivary-gland-tooltip"
     style="position: absolute; top: 30px; left: 80px; width: 50px; height: 75px"
     matTooltip="Salivary Gland"
   ></div>
   <div
+    (click)="selector.selected = 'Esophagus'"
+    (mouseover)="selector.selected = 'Esophagus'"
     class="esophagus-tooltip"
     matTooltip="Esophagus"
-    style="position: absolute; top: 120px; left:80px; width: 100px; height: 200px"
+    style="
+      position: absolute;
+      top: 120px;
+      left: 80px;
+      width: 100px;
+      height: 200px;
+    "
     [matTooltipPosition]="'left'"
   ></div>
   <div
+    (click)="selector.selected = 'Liver'"
+    (mouseover)="selector.selected = 'Liver'"
     class="liver-tooltip"
     matTooltip="Liver"
-    style="position: absolute; top: 320px; left: 0; width: 160px; height: 100px;"
+    style="position: absolute; top: 320px; left: 0; width: 160px; height: 120px"
   ></div>
   <div
+    (click)="selector.selected = 'Gallbladder'"
+    (mouseover)="selector.selected = 'Gallbladder'"
+    class="gallbladder-tooltip"
+    matTooltip="Gallbladder"
+    style="
+      position: absolute;
+      top: 390px;
+      left: 40px;
+      width: 100px;
+      height: 30px;
+      transform: rotate(-45deg);
+    "
+  ></div>
+  <div
+    (click)="selector.selected = 'Pancreas'"
+    (mouseover)="selector.selected = 'Pancreas'"
+    class="pancreas-tooltip"
+    matTooltip="Pancreas"
+    style="
+      position: absolute;
+      top: 460px;
+      left: 120px;
+      width: 160px;
+      height: 70px;
+    "
+  ></div>
+  <div
+    (click)="selector.selected = 'Stomach'"
+    (mouseover)="selector.selected = 'Stomach'"
     class="stomach-tooltip"
     matTooltip="Stomach"
-    style="width: 100px; height: 100px; top: 360px; left: 160px; position: absolute"
+    style="
+      width: 100px;
+      height: 100px;
+      top: 360px;
+      left: 160px;
+      position: absolute;
+    "
   ></div>
   <div
+    (click)="selector.selected = 'Large Intestine'"
+    (mouseover)="selector.selected = 'Large Intestine'"
     class="large-intestine-tooltip"
     matTooltip="Large Intestine"
-    style="top: 530px; left: 0; width: 300px; height: 250px; position: absolute;"
+    style="top: 530px; left: 0; width: 300px; height: 250px; position: absolute"
   ></div>
   <div
+    class="duodenum-tooltip"
+    (click)="selector.selected = 'Duodenum'"
+    (mouseover)="selector.selected = 'Duodenum'"
+    matTooltip="Duodenum"
+    style="
+      position: absolute;
+      top: 475px;
+      left: 80px;
+      height: 65px;
+      width: 30px;
+    "
+  ></div>
+  <div
+    (click)="selector.selected = 'Jejunum/Ileum'"
+    (mouseover)="selector.selected = 'Jejunum/Ileum'"
     class="small-intestine-tooltitp"
     matTooltip="Small Intestine (Jejunum/Ileum)"
-    style="top: 570px; position: absolute; left: 60px; width: 200px; height: 150px"
+    style="
+      top: 570px;
+      position: absolute;
+      left: 60px;
+      width: 200px;
+      height: 150px;
+    "
   ></div>
   <div
+    (click)="selector.selected = 'Rectum'"
+    (mouseover)="selector.selected = 'Rectum'"
     class="rectum-tooltip"
     matTooltip="Rectum"
-    style="position: absolute; left: 120px; top: 710px; width: 50px; height: 50px;"
+    style="
+      position: absolute;
+      left: 120px;
+      top: 710px;
+      width: 50px;
+      height: 50px;
+    "
   ></div>
   <div
+    (click)="selector.selected = 'Anus'"
+    (mouseover)="selector.selected = 'Anus'"
     class="anus-tooltip"
     matTooltip="Anus"
-    style="position: absolute; left:120px; top: 760px; width: 50px; height: 50px;"
+    style="
+      position: absolute;
+      left: 120px;
+      top: 760px;
+      width: 50px;
+      height: 50px;
+    "
   ></div>
 </section>

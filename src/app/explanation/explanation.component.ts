@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { SelectorService } from '../selector.service';
 
 @Component({
   selector: 'app-explanation',
@@ -6,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./explanation.component.scss'],
 })
 export class ExplanationComponent {
-  constructor() {}
+  constructor(public selector: SelectorService) {}
 
   @Input() title!: string;
 }
